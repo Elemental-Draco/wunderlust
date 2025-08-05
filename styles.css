@@ -203,7 +203,6 @@ p {
 }
 
 .sr-only {
-  clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
   height: 1px;
   width: 1px;
@@ -296,7 +295,7 @@ li a {
 
 #menu-toggle:has(input:checked)::after {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: all;
 }
 
 #menu-toggle input:checked+label[for="toggle"] {
@@ -591,7 +590,7 @@ footer a {
 
   header>p {
     grid-column: 2;
-    padding-right: 4 0px;
+    padding-right: 40px;
   }
 
   label[for="toggle"] {
